@@ -1,9 +1,9 @@
 module.exports = {
-  content: [
-    "./app/**/*.jsx",
-  ],
+  content: ['./app/**/*.jsx'],
   theme: {
-    extend: {},
+    fontFamily: {
+      sans: 'Liber, Helvetica, Arial, sans-serif',
+    },
   },
   plugins: [],
 }

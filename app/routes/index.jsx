@@ -9,7 +9,7 @@ export default function Index() {
   const profiles = useLoaderData()
 
   return (
-    <div className="bg-red-300">
+    <div>
       {profiles.map(({ name }) => (
         <h1 key={name}>{name}</h1>
       ))}

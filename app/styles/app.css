@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "liber";
+
+  src: url("../../liber-reg.woff2") format("woff2");
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "liber";
+
+  src: url("../../liber-bold.woff2") format("woff2");
+
+  font-weight: bold;
+
+  font-style: normal;
+}
+
 /*
 ! tailwindcss v3.0.17 | MIT License | https://tailwindcss.com
 */
@@ -42,7 +62,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Liber, Helvetica, Arial, sans-serif;
   /* 4 */
 }
 
