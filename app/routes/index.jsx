@@ -1,5 +1,5 @@
-import { useLoaderData } from "remix";
-import { getProfiles } from "~/actions/profile";
+import { useLoaderData } from 'remix'
+import { getProfiles } from '~/actions/profile'
 
 export const loader = () => {
   return getProfiles()
@@ -7,9 +7,9 @@ export const loader = () => {
 
 export default function Index() {
   const profiles = useLoaderData()
-  
+
   return (
-    <div>
+    <div className="bg-red-300">
       {profiles.map(({ name }) => (
         <h1 key={name}>{name}</h1>
       ))}
