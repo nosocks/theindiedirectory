@@ -1,6 +1,6 @@
 import { Links, Meta, Scripts } from 'remix'
 
-export default ({ error = '' }) => {
+export default ({ error = {} }) => {
   // eslint-disable-next-line no-console
   console.error(error)
 
@@ -12,7 +12,7 @@ export default ({ error = '' }) => {
         <Links />
       </head>
       <body>
-        <h1 className="text-2xl">{error}</h1>
+        <h1 className="text-2xl">{error?.message ?? 'uh-oh'}</h1>
         <Scripts />
       </body>
     </html>

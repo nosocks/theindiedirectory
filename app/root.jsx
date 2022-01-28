@@ -9,6 +9,7 @@ import {
 
 import styles from './styles/app.css'
 import metadata from './meta.json'
+import ErrorBoundary from './components/ErrorBoundary'
 
 export const meta = () => metadata
 
@@ -30,3 +31,5 @@ export default () => (
     </body>
   </html>
 )
+
+export { ErrorBoundary }
