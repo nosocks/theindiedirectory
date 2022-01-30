@@ -9,7 +9,9 @@ import {
 
 import styles from './styles/app.css'
 import metadata from './meta.json'
+
 import ErrorBoundary from './components/ErrorBoundary'
+import Layout from './components/Layout'
 
 export const meta = () => metadata
 
@@ -24,7 +26,9 @@ export default () => (
       <Links />
     </head>
     <body>
-      <Outlet />
+      <Layout>
+        <Outlet />
+      </Layout>
       <ScrollRestoration />
       <Scripts />
       {process.env.NODE_ENV === 'development' && <LiveReload />}
