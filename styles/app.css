@@ -1,16 +1,7 @@
-
 @font-face {
-  font-family: "liber";
-  src: url("../../liber-reg.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "liber";
-  src: url("../../liber-bold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
+  font-family: 'manrope';
+  src: url("../../manrope.woff2") format("woff2-variations");
+  font-weight: 200 900;
 }
 
 @tailwind base;

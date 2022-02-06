@@ -25,7 +25,7 @@ export default () => (
       <Meta />
       <Links />
     </head>
-    <body>
+    <body className="bg-carbon-50">
       <Layout>
         <Outlet />
       </Layout>
